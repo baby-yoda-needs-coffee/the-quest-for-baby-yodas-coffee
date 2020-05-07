@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
@@ -8,7 +9,7 @@ public class Game {
 //        String playerInput = scanner.nextLine();
         beginGame(scanner);
         gameContinues();
-
+        firstQuestLevel();
 
         }
 
@@ -34,7 +35,14 @@ public class Game {
                 "biscuits.\n Good luck, young Padawan! May the force be with you.", playerName);
 
         }
-//        public static int firstQuestLevel (int lives, int defeatingTheEnemy){
-//            System.out.println("Your current stats are: " );
-//        }
+        public static void firstQuestLevel ()
+//                int lives, int defeatingTheEnemy
+        {
+            int yodaHealth = 20;
+            int yodaCoffee = 5;
+            Random random = new Random();
+            int yodaAttack = random.nextInt(10) + 1;
+            System.out.println("\nYou hit your enemy for: " + yodaAttack);
+            System.out.println("Your current health is: " + yodaHealth );
+        }
 }
