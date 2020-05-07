@@ -34,8 +34,7 @@ public class Game {
                 "biscuits.\n Good luck, young Padawan! May the force be with you.", playerName);
 
         }
-        public static int firstQuestLevel (int lives, int defeatingTheEnemy){
-            System.out.println("Your current stats are: " );
-            if()
-        }
+//        public static int firstQuestLevel (int lives, int defeatingTheEnemy){
+//            System.out.println("Your current stats are: " );
+//        }
 }
