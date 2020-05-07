@@ -11,10 +11,9 @@ public class Game {
         gameContinues();
 
         while (true) {
-
-            firstQuestLevel();
             System.out.println("Would you like to continue?");
             String play = scanner.nextLine();
+            firstQuestLevel();
             if (play.toLowerCase().equals("no")) {
                 break;
             }
@@ -51,7 +50,7 @@ public class Game {
 //                int lives, int defeatingTheEnemy
     {
         Scanner scanner = new Scanner(System.in);
-        int yodaHealth = 20;
+        int yodaHealth= 20;
         int enemyHealth = 15;
         int yodaCoffee = 5;
         Random random = new Random();
@@ -63,6 +62,7 @@ public class Game {
         int updatedYodaHealth = yodaHealth - enemyAttack;
         System.out.println("Your enemy hits you for: " + enemyAttack);
         System.out.println("Your current health is now: " + updatedYodaHealth);
+
 
 
 
